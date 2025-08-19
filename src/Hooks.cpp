@@ -5,7 +5,7 @@ namespace Hooks {
 		logger::info("InstallHooks: Entering. Applying hooks and patches.");
 
 		// Hook 1: Install hook for jump state checking.
-		logger::info("InstallHooks: Calling InstallJumpStateCheckHook.");
+		logger::info("InstallHooks: Calling \"Hook 1\"");
 		TemplateStruct::Install();
 
 		logger::info("InstallHooks: Exiting, All hooks and patches applied successfully. ");
