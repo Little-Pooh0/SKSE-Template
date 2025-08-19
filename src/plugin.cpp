@@ -1,5 +1,5 @@
 #include "PCH.h"
-#include "logger.h"
+#include "Logger.h"
 #include "MCP.h"
 
 void OnMessage(SKSE::MessagingInterface::Message* message) {
@@ -10,8 +10,7 @@ void OnMessage(SKSE::MessagingInterface::Message* message) {
     if (message->type == SKSE::MessagingInterface::kPostPostLoad) {
 		// Called immediately after all plugins have loaded and is useful for debugging skse plugin incompatibilities
         // Sent right after kPostLoad to facilitate the correct dispatching/registering of messages/listeners
-        logger::info("PostPostLoad message received");
-    }
+	}
     if (message->type == SKSE::MessagingInterface::kPreLoadGame) {
 		// message->dataLen: length of file path, data: char* file path of .ess savegame file
         // sent immediately before savegame is read
@@ -46,3 +45,4 @@ SKSEPluginLoad(const SKSE::LoadInterface *skse) {
     MCP::Register();
     return true;
 }
+
