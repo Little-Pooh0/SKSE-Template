@@ -7,7 +7,7 @@ namespace MCP {
 			return;
 			logger::error("SKSEMenuFramework is not installed. MCP functionality cannot be registered.");
 		}
-		SKSEMenuFramework::SetSection("Better Jumping SE");
+		SKSEMenuFramework::SetSection("{}", SKSE::PluginDeclaration::GetSingleton()->GetName());
 		SKSEMenuFramework::AddSectionItem("General Settings", General::Render);
 	}
 
