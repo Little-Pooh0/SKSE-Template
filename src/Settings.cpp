@@ -5,17 +5,17 @@ namespace Settings {
         CSimpleIniW ini;
         ini.SetUnicode();
 
-        if (!std::filesystem::exists(setting_path)) {
-            logger::info("No {} file found, creating new with default values", setting_path);
+        if (!std::filesystem::exists(settingPath)) {
+            logger::info("No {} file found, creating new with default values", settingPath);
             ResetSettings();
         } else {
-            ini.LoadFile(setting_path);
+            ini.LoadFile(settingPath);
 
             General::ModToggle = ini.GetBoolValue(L"General", L"ModToggle", General::ModToggle);
             ini.SetBoolValue(L"General", L"ModToggle", General::ModToggle, L"; Main Mod Toggle");
 
 
-            ini.SaveFile(setting_path);
+            ini.SaveFile(settingPath);
             logger::info("Settings Loaded");
         }
     }

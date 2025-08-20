@@ -24,3 +24,5 @@
 Automatically imports:
 - [CLibUtil](https://github.com/powerof3/CLibUtil) by powerof3
 - [SKSE Menu Framework](https://www.nexusmods.com/skyrimspecialedition/mods/120352) by Thiago099
+- Both RapidJSON and SimpleINI are included.
+- spdlog Logging library is included.

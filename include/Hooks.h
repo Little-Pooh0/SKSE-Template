@@ -4,7 +4,7 @@
 #include "Settings.h"  
 #include "Utils.h"
 
-#include <xbyak/xbyak.h>  
+#include <xbyak/xbyak.h>
 
 namespace Hooks {
     void InstallHooks();
