@@ -1,5 +1,4 @@
 #include "PCH.h"
-#include "Logger.h"
 #include "MCP.h"
 
 void OnMessage(SKSE::MessagingInterface::Message* message) {
@@ -37,7 +36,6 @@ void OnMessage(SKSE::MessagingInterface::Message* message) {
 }
 
 SKSEPluginLoad(const SKSE::LoadInterface *skse) {
-
     SetupLog();
     logger::info("Plugin loaded");
     SKSE::Init(skse);

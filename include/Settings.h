@@ -3,16 +3,11 @@
 #include "PCH.h"
 
 namespace Settings {
-	inline const char* setting_path{"Data/SKSE/Plugins/MODNAME.ini"};  // Remember to change this
-
+	inline const char* settingPath = ("Data/SKSE/Plugins/" + PCH::pluginName + ".ini").c_str();
 	void LoadSettings();
 	void ResetSettings();
 
 	namespace General {
 		inline bool ModToggle = true;
 	}
-	namespace Maintenance {
-
-	}
-
 }

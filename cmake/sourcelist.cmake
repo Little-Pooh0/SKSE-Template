@@ -1,6 +1,6 @@
 set(sources ${sources}
 	src/Events.cpp
-	src/plugin.cpp
+	src/Plugin.cpp
 	src/Utils.cpp
 	src/Settings.cpp
 	src/Manager.cpp

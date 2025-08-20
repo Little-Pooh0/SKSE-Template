@@ -11,9 +11,9 @@
     "directxmath",
     "directxtk",
     "clib-util",
-    "directxtk",
     "skse-mcp",
-    "magic-enum"
+    "magic-enum",
+    "rapidjson"
   ],
   "overrides": [
     {

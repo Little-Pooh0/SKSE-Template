@@ -10,6 +10,12 @@
 #include <vector>
 
 #include "Utils.h"
+#include "Logger.h"
+
 
 namespace logger = SKSE::log;
 using namespace std::literals;
+
+namespace PCH {
+	std::string pluginName = std::string(SKSE::PluginDeclaration::GetSingleton()->GetName());
+}
