@@ -7,10 +7,11 @@ namespace MCP {
 			return;
 			logger::error("SKSEMenuFramework is not installed. MCP functionality cannot be registered.");
 		}
-		SKSEMenuFramework::SetSection(PCH::pluginName);
+		SKSEMenuFramework::SetSection(Plugin::pluginName);
 		SKSEMenuFramework::AddSectionItem("General Settings", General::Render);
 	}
 
 	void __stdcall General::Render() {
+
 	}
 }

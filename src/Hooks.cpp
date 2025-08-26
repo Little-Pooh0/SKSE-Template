@@ -14,7 +14,7 @@ namespace Hooks {
 
 	void TemplateStruct::Install() {
 		auto& trampoline = SKSE::GetTrampoline();
-		//originalFunction = trampoline.write_call<5>(REL::RelocationID(0, 0).address() + REL::Relocate(0x0, 0x0)), TemplateStruct::TemplateHook); // Erroring, needs revision
+		//originalFunction = trampoline.write_call<5>(REL::RelocationID(0, 0).address() + REL::Relocate(0x0, 0x0)), TemplateHook); // Erroring, needs revision
 		logger::info("Installed \"Hook 1\"");
 	}
 

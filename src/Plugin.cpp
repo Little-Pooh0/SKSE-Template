@@ -1,5 +1,4 @@
-#include "PCH.h"
-#include "MCP.h"
+#include "Plugin.h"
 
 void OnMessage(SKSE::MessagingInterface::Message* message) {
 	// Handle messages from SKSE called in order of first to last occurance

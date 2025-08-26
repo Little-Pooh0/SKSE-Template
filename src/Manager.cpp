@@ -6,7 +6,7 @@ namespace Manager {
 	* Called from the SKSE plugin entry point after game data is loaded.
 	*/
 	void Initialize() {
-		logger::info("Manager: {} Initializing, Entering and Allocating trampoline.", PCH::pluginName.c_str());
+		logger::info("Manager: {} Initializing, Entering and Allocating trampoline.", Plugin::pluginName.c_str());
 
 		// Allocate trampoline space early. Commonlib handles getting the SKSE trampoline.
 		SKSE::AllocTrampoline(14);  // Only 14 bytes are necessary. SKSE and Commonlib will automatically allocate the correct amount.
@@ -18,7 +18,7 @@ namespace Manager {
 		// Install memory hooks and patches.
 		Hooks::InstallHooks();
 		
-		logger::info("Manager: Exiting, InstallHooks finished and {} Initialization finished.", PCH::pluginName.c_str());
+		logger::info("Manager: Exiting, InstallHooks finished and {} Initialization finished.", Plugin::pluginName.c_str());
 		return;
 	}
 
